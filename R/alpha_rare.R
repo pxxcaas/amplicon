@@ -88,7 +88,7 @@ alpha_rare_curve <- function(alpha_rare, metadata, groupID = "genotype") {
     geom_line()+
     geom_errorbar(aes(ymin=value-se, ymax=value+se), width=.5) +
     labs(x="Percentage (%)", y=paste("Richness"), color=groupID)+theme_classic()+
-    scale_x_discrete(breaks = c(1:10)*10, labels = c(1:10)*10)+
+    scale_x_discrete(breaks = c(1:6)*6, labels = c(1:6)*6)+
     theme(text=element_text(family="sans", size=7))
   # xlab("Percentage (%)")+ylab("Richness")
   p
